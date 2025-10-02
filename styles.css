@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    gap: 2em;
+}
+
+.results{
+    display: flex;
+    gap: 2em;
+
+}
+
+section.info{
+
+    .session_stats{
+        background-color: pink;
+        padding: 1em 2em 2em 2em;
+        border-radius: 10px;
+    }
+}
+
+#reset{
+    padding: 0.75em;
+    background-color: lavenderblush;
+    align-self: center;
+}
+#reset:hover{
+    background-color: lightpink;
+}
+
