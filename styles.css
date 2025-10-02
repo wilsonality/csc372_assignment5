@@ -1,30 +1,79 @@
+/* global element styling */
+
 body{
     display: flex;
     font-family: Helvetica, sans-serif;
     gap: 2em;
 }
 
-.results{
-    display: flex;
-    gap: 2em;
-
+button{
+    padding: 0.75em;
+    background-color: lavenderblush;
+    align-self: center;
+}
+button:hover{
+    background-color: #ffb6c1;
 }
 
+img{
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+}
+
+/* left side */
 section.info{
+    width: 40%;
+
+    .results{
+        display: flex;
+        gap: 2em;
+    }
 
     .session_stats{
         background-color: pink;
         padding: 1em 2em 2em 2em;
         border-radius: 10px;
+        font-weight: bold;
     }
 }
 
+
+
 #reset{
-    padding: 0.75em;
-    background-color: lavenderblush;
-    align-self: center;
 }
 #reset:hover{
-    background-color: lightpink;
+    background-color: #ffb6c1;
+}
+/* right side */
+section.gameplay{
+    width: 50%;
 }
 
+.choice_box{
+    background-color: cornflowerblue;
+    padding: 1em;
+    text-align: center;
+    margin-top: 5em 0em;
+    
+    
+    img.selected{
+        border: 3px solid red;
+    }
+}
+
+.cpu_play{
+    display: flex;
+    gap: 5em;
+
+    h3{
+        text-decoration: underline;
+    }
+
+    img{
+        border: 5px solid black;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+    }
+}

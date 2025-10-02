@@ -12,23 +12,31 @@
         <h1>rock paper scissors!</h1>
         <div class="results">
             <div class="session_stats">
-                <p id="game_total">total games:</p>
-                <p id="p_score">player score: </p>
-                <p id="c_score">cpu score:</p>
-                <p id="draw_ct">draw: </p>
+                <p id="game_total">total games: <span>0</span></p>
+                <p id="p_score">player score: <span>0</span></p>
+                <p id="c_score">cpu score: <span>0</span></p>
+                <p id="draw_ct">draw: <span>0</span></p>
             </div>
             <button id="reset">
                 Reset Score
             </button>
         </div>
         <div class="round_box">
-            <h3 id="round_result">result: no play</h3>
+            <h3 id="round_result">result: <span>no play</span></h3>
         </div>
     </section>
     <section class="gameplay">
         <h3>Choose Play</h3>
         <div class="choice_box">
             <!-- choose from rock, paper, scissors -->
+             <img src="images/rock.jpg" alt="ROCK" id="rock">
+             <img src="images/paper.jpg" alt="PAPER" id="paper">
+             <img src="images/scissors.jpg" alt="SCISSORS" id="scissors">
+        </div>
+        <button id="confirm"> Confirm Choice</button>
+        <div class="cpu_play">
+            <h3>cpu plays... </h3>
+            <img src="images/rock.jpg" alt="CPU Move" id="cpu_choice">
         </div>
     </section>
 </body>
