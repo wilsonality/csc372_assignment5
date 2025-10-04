@@ -22,7 +22,7 @@ img{
 }
 
 img.selected{
-    border: 5px solid black;
+    border: 3px solid palevioletred;
 }
 
 /* left side */
@@ -43,12 +43,6 @@ section.info{
 }
 
 
-
-#reset{
-}
-#reset:hover{
-    background-color: #ffb6c1;
-}
 /* right side */
 section.gameplay{
     width: 60%;
@@ -60,10 +54,6 @@ section.gameplay{
     text-align: center;
     margin-top: 5em 0em;
     
-    
-    img.selected{
-        border: 3px solid red;
-    }
 }
 
 .cpu_play{

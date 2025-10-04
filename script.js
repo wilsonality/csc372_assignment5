@@ -40,7 +40,6 @@ async function computerPlay(){
     // change cpu play IMG to match what random int we got
     const cpuChoiceIMG = document.querySelector('#cpu_choice');
     cpuChoiceIMG.src = choices[int];
-    cpuChoiceIMG.classList.add('highlight');
 
     let cpuPlayHead = document.querySelector('.cpu_play h3');
     let cpuResultElem = document.createElement('p');
@@ -102,8 +101,11 @@ async function computerPlay(){
         }
     }
 
-    // reset to thinking
-
+    // round over, reset to default after pause
+    setTimeout(() => {
+        cpuChoiceIMG.src = 'images/question.jpg';
+        cpuChoiceIMG.classList.remove('highlight');
+    }, 2000);
 
 }
 
@@ -112,6 +114,7 @@ function imageCycle(){
     return new Promise(resolve => {
         let index = 0;
         const cpuChoiceIMG = document.querySelector('#cpu_choice');
+        cpuChoiceIMG.classList.add('highlight');
             
         let id = setInterval(async() => {
             // go to next image
