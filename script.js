@@ -156,8 +156,8 @@ function roundLoss(){
 }
 
 function roundWin(){
-    const resultElem = document.querySelector('#round_result span')
-    resultElem.textContent = "Win!"
+    const resultElem = document.querySelector('#round_result span');
+    resultElem.textContent = "Win!";
 
     let gt = parseInt(document.querySelector('#game_total span').textContent);
     let ps = parseInt(document.querySelector('#p_score span').textContent);
@@ -168,8 +168,9 @@ function roundWin(){
 
 function roundDraw(){
     const resultElem = document.querySelector('#round_result span');
-    resultElem.textContent = "Draw!"
+    resultElem.textContent = "Draw!";
 
+    let gt = parseInt(document.querySelector('#game_total span').textContent);
     let drawCt = parseInt(document.querySelector('#draw_ct span').textContent);
 
     document.querySelector('#game_total span').textContent = ++gt;
