@@ -21,6 +21,10 @@ img{
     object-fit: cover;
 }
 
+img.selected{
+    border: 5px solid black;
+}
+
 /* left side */
 section.info{
     width: 40%;
@@ -47,7 +51,7 @@ section.info{
 }
 /* right side */
 section.gameplay{
-    width: 50%;
+    width: 60%;
 }
 
 .choice_box{
@@ -75,5 +79,9 @@ section.gameplay{
         border-radius: 50%;
         height: 150px;
         width: 150px;
+    }
+
+    .highlight{
+        border-color: palevioletred;
     }
 }
