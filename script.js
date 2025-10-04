@@ -171,4 +171,7 @@ function roundDraw(){
     resultElem.textContent = "Draw!"
 
     let drawCt = parseInt(document.querySelector('#draw_ct span').textContent);
+
+    document.querySelector('#game_total span').textContent = ++gt;
+    document.querySelector('#draw_ct span').textContent = ++drawCt;
 }

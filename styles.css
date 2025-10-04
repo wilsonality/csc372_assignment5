@@ -4,6 +4,8 @@ body{
     display: flex;
     font-family: Helvetica, sans-serif;
     gap: 2em;
+
+    font-size: large;
 }
 
 button{
@@ -40,6 +42,10 @@ section.info{
         border-radius: 10px;
         font-weight: bold;
     }
+
+    #round_result{
+        font-size: xx-large;
+    }
 }
 
 
@@ -49,7 +55,7 @@ section.gameplay{
 }
 
 .choice_box{
-    background-color: cornflowerblue;
+    background-color: thistle;
     padding: 1em;
     text-align: center;
     margin-top: 5em 0em;
